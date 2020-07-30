@@ -1,0 +1,39 @@
+COMMANDS:
+
+DOWNLOAD, AND SETUP OPENVINO IN UBUNTU 18.04:
+
+tar -xvzf l_openvino_toolkit_p_2019.3.376.tgz
+cd l_openvino_toolkit_p_2019.3.376
+sudo ./install.sh
+cd l_openvino_toolkit_p_2019.3.376
+sudo -E ./install_openvino_dependencies.sh
+source /opt/intel/openvino/bin/setupvars.sh
+cd /opt/intel/openvino/deployment_tools/model_optimizer/install_prerequisites
+sudo ./install_prerequisites.sh
+cd /opt/intel/openvino/deployment_tools/demo
+./demo_squeezenet_download_convert_run.sh
+./demo_security_barrier_camera.sh
+
+SOURCE ENVIRONMENT:
+
+source /opt/intel/openvino/bin/setupvars.sh
+
+DOWNLOAD MODELS:
+
+cd /opt/intel/openvino/deployment_tools/open_model_zoo/tools/downloader
+sudo ./downloader.py --name face-detection-adas-binary-0001 -o /home/andres/P3/
+sudo ./downloader.py --name head-pose-estimation-adas-0001 -o /home/andres/P3/
+sudo ./downloader.py --name landmarks-regression-retail-0009 -o /home/andres/P3/
+sudo ./downloader.py --name gaze-estimation-adas-0002 -o /home/andres/P3/
+
+PYTHON LIBRARIES NECESSARY TO USE PYAUTOGUI:
+
+sudo apt-get dist-upgrade
+apt-get install python-tk 
+
+EXAMPLE OF COMMAND TO RUN THE DEMO:
+
+python3 main.py -dt intel/face-detection-adas-binary-0001/INT1/face-detection-adas-binary-0001.xml -pe intel/head-pose-estimation-adas-0001/FP32/head-pose-estimation-adas-0001.xml -ld intel/landmarks-regression-retail-0009/FP16/landmarks-regression-retail-0009.xml -ge intel/gaze-estimation-adas-0002/FP32/gaze-estimation-adas-0002.xml  -i demo.mp4 -f fad hpe fld gad  -d CPU -l /opt/intel/openvino/deployment_tools/inference_engine/lib/intel64/libcpu_extension_sse4.so -o results
+
+
+
