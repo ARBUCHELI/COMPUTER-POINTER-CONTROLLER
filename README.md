@@ -324,6 +324,8 @@ ___________________________________
 
 Using a Pipeline with two FP32 model precissions, is faster for loading but the performance is not as good as the previous combination of model precissions.
 
+## Author: Andrés R. Bucheli.
+
 
 
 
