@@ -5,7 +5,7 @@ same machine and coordinate the flow of data between those models.
 
 ![videoutput](https://raw.githubusercontent.com/ARBUCHELI/COMPUTER-POINTER-CONTROLLER/master/videoutput.png)
 
-![cameraoutput]()
+![cameraoutput](https://raw.githubusercontent.com/ARBUCHELI/COMPUTER-POINTER-CONTROLLER/master/cameraoutput.png)
 
 ## How the project works
 
@@ -22,6 +22,8 @@ To get these inputs, it's necessary to use three other OpenVino models:
 	* Facial Landmarks Detection.
 
 Please take a look to the outputs folder located inside the final_project folder to see pictures and a short video that show how the project works.
+
+[![Youtube Video]()](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 
 ## Project Set Up and Installation
 
