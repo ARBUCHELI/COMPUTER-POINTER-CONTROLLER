@@ -3,6 +3,10 @@
 This project makes use of a gaze detection model, to control the computer mouse pointer.  This project demonstrates OpenVino's ability to run multiple models on the 
 same machine and coordinate the flow of data between those models.
 
+![videoutput](https://raw.githubusercontent.com/ARBUCHELI/COMPUTER-POINTER-CONTROLLER/master/videoutput.png)
+
+![cameraoutput]()
+
 ## How the project works
 
 The gaze estimation model requires three inputs:
