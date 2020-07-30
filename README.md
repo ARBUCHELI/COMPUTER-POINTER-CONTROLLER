@@ -23,6 +23,8 @@ To get these inputs, it's necessary to use three other OpenVino models:
 
 Please take a look to the outputs folder located inside the final_project folder to see pictures and a short video that show how the project works.
 
+## Please click in the image to see the video output on Youtube.
+
 [![Youtube Video](https://raw.githubusercontent.com/ARBUCHELI/COMPUTER-POINTER-CONTROLLER/master/fotoparaelvideo.jpg)](https://www.youtube.com/watch?v=qy7uZli2U3w)
 
 ## Project Set Up and Installation
